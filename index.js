@@ -2,19 +2,14 @@ const express = require('express')
 const app = express()
 require('dotenv').config()
 
-app.get('/', (req, res)=>{
+app.set("view engine", "jsx")
+app.engine("jsx", require("express-react-views").createEngine())
 
-    res.send("Hello from home")
 
-})
-
+app.use(express.static('public'))
+app.use("/", require("./controllers/home"))
 app.use('/inventory', require('./controllers/inventory'))
-
-app.get('*',(req, res)=>{
-    
-    res.status(404).send("Error404")
-    
-})
+app.use("*", require("./controllers/error404"))
 
 app.listen(process.env.PORT)
 
