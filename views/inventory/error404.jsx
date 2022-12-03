@@ -1,5 +1,5 @@
 const React = require("react");
-const Def = require("./default");
+const Def = require("../default");
 
 function error404() {
 
@@ -10,8 +10,8 @@ function error404() {
 
             <html lang="en">
                 <head>
-                    <meta charset="UTF-8" />
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                    <meta charSet="UTF-8" />
+                    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <title>Document</title>
                     <link rel="stylesheet" href="error404.css" />
@@ -19,7 +19,7 @@ function error404() {
                 <body>
 
                 
-                   <a className="aTag" href="/"><img className="error_pic" src="/pictures/404_error.png" alt="" srcset="" /></a>
+                   <a className="aTag" href="/"><img className="error_pic" src="/pictures/404_error.png" alt="" srcSet="" /></a>
 
                 </body>
             </html>

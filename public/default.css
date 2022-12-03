@@ -1,51 +1,36 @@
-html{
-
-    margin: 0px;
-  
-  }
+body{
+  height: 100%;
+}
   
   body {
-      background-color: rgb(210, 221, 229);
       margin: 0px;
     }
-  .navDiv{
+
   
-  background-color: black;
-  height: 70px;
-  text-align: center;
-  padding-top: 20px;
-  
-  
-  
-  }
-  
-  ul{
-  
-  
-  margin-top: 0px;
-  
-  }
+ 
   
   li{
   
-  padding: 20px;
+  padding: 10px;
   list-style: none;
-  font-size: 30px;
+  font-size: 25px;
   display: inline;
   
   
   }
   
-  a{
-  
-    text-decoration: none;
-    color: yellow;
-  
-  }
-  
-  a:hover{
-  
-    text-decoration:underline;
-  
-  }
+
     
+
+  .navbar-inverse {
+   
+    text-align: center;
+}
+
+.navbar {
+   
+    display: flex;
+
+
+}
+

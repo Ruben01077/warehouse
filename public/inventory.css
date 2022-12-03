@@ -1,0 +1,35 @@
+.info_bar{
+   top: 0;
+   display: flex;
+   position: sticky;
+   margin-bottom: 10px;
+   background-color: rgb(17, 142, 251);
+   color: white;
+
+}
+
+.parts_bar{
+
+   top: 0;
+   display: flex;
+   background-color: aliceblue;
+   margin-bottom: 10px;
+
+}
+
+ul{
+   display: flex;
+
+}
+
+ul div{
+   width: 170px;
+   font-size: 25px;
+   border-right: 1px solid;
+   margin-left: 10px;
+}
+
+.mainDiv{
+   height: 2100px;
+}
+

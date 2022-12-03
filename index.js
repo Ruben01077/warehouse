@@ -7,9 +7,19 @@ app.engine("jsx", require("express-react-views").createEngine())
 
 
 app.use(express.static('public'))
-app.use("/", require("./controllers/home"))
+
+app.get("/", (req, res)=>{
+res.render("home")
+})
+
 app.use('/inventory', require('./controllers/inventory'))
-app.use("*", require("./controllers/error404"))
+
+
+app.get("*", (req,res)=>{
+
+    res.render("inventory/error404")
+
+})
 
 app.listen(process.env.PORT)
 
