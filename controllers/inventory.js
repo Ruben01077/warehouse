@@ -12,6 +12,8 @@ router.get('/', (req, res) => {
     res.render('inventory/index', {inventory})
 
   })
+
+
   
 
   router.get('/new', (req, res) => {
@@ -43,7 +45,21 @@ router.get('/', (req, res) => {
       res.render('error404')
     }
     else {
-      res.render('show', {part:inventory[id]})
+      res.render('show', {part:inventory[id], id})
+    }
+  })
+  
+  router.delete('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+      res.render('error404')
+    }
+    else if (!inventory[id]) {
+      res.render('error404')
+    }
+    else {
+      inventory.splice(id, 1)
+      res.redirect('/inventory')
     }
   })
   

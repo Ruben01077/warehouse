@@ -16,7 +16,7 @@ function index(data) {
                     <div>{part.part_name}</div>
                     <div>{part.side}</div>
                   
-
+                   
                    
                 </ul>
             </div>

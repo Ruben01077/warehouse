@@ -28,10 +28,10 @@ function show(data) {
             <h1>Description: {data.part.description}</h1>
 
             <div className='editDeleteDiv'>
-                        <a href="" className="btn btn-warning">
+                        <a href={`inventory/${data.id}/edit}`} className="btn btn-warning">
                             Edit
                         </a>
-                        <form method="POST" action="">
+                        <form method="POST" action={`/inventory/${data.id}?_method=DELETE`}>
                             <button type="submit" className="btn btn-danger">
                                 Delete
                             </button>

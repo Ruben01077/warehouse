@@ -10,6 +10,17 @@ img{
 
 .editDeleteDiv{
     display: flex;
-    justify-content: space-around;
+    
     
 }
+
+
+.btn-danger{
+    margin-left: 20px;
+ }
+ 
+ .btn-warning{
+
+  
+ }
+ 
