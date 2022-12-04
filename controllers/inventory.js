@@ -23,6 +23,38 @@ router.get('/', (req, res) => {
     part_name: 'Tail Light',
     side: 'Left',
     description: 'Scratch'
+  },
+  {
+    make: 'Toyota',
+    model: 'Camry',
+    year: '2020',
+    part_name: 'Tail Light',
+    side: 'Left',
+    description: 'Scratch'
+  },
+  {
+    make: 'Toyota',
+    model: 'Camry',
+    year: '2020',
+    part_name: 'Tail Light',
+    side: 'Left',
+    description: 'Scratch'
+  },
+  {
+    make: 'Toyota',
+    model: 'Camry',
+    year: '2020',
+    part_name: 'Tail Light',
+    side: 'Left',
+    description: 'Scratch'
+  },
+  {
+    make: 'Toyota',
+    model: 'Camry',
+    year: '2020',
+    part_name: 'Tail Light',
+    side: 'Left',
+    description: 'Scratch'
   }]
   
 
@@ -30,6 +62,10 @@ router.get('/', (req, res) => {
   })
   
 
+  router.get('/new', (req, res) => {
+    res.render('inventory/new')
+  })
+  
 
 
 

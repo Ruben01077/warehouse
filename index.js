@@ -17,7 +17,7 @@ app.use('/inventory', require('./controllers/inventory'))
 
 app.get("*", (req,res)=>{
 
-    res.render("inventory/error404")
+    res.render("error404")
 
 })
 
