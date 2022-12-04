@@ -1,5 +1,6 @@
 const express = require('express')
 const router = require('express').Router()
+const inventory = require("../models/inventory") // Models
 
 
 router.use(express.static('public'))
@@ -8,68 +9,29 @@ router.use(express.static('public'))
 // GET /inventory
 router.get('/', (req, res) => {
 
-  let inventory = [{
-    make: 'Toyota',
-    model: 'Prius',
-    year: '2019',
-    part_name: 'Headlight',
-    side: 'Right',
-    description: 'OK'
-  },
-  {
-    make: 'Toyota',
-    model: 'Camry',
-    year: '2020',
-    part_name: 'Tail Light',
-    side: 'Left',
-    description: 'Scratch'
-  },
-  {
-    make: 'Toyota',
-    model: 'Camry',
-    year: '2020',
-    part_name: 'Tail Light',
-    side: 'Left',
-    description: 'Scratch'
-  },
-  {
-    make: 'Toyota',
-    model: 'Camry',
-    year: '2020',
-    part_name: 'Tail Light',
-    side: 'Left',
-    description: 'Scratch'
-  },
-  {
-    make: 'Toyota',
-    model: 'Camry',
-    year: '2020',
-    part_name: 'Tail Light',
-    side: 'Left',
-    description: 'Scratch'
-  },
-  {
-    make: 'Toyota',
-    model: 'Camry',
-    year: '2020',
-    part_name: 'Tail Light',
-    side: 'Left',
-    description: 'Scratch'
-  }]
-  
-
     res.render('inventory/index', {inventory})
+
   })
   
 
   router.get('/new', (req, res) => {
     res.render('inventory/new')
   })
-  
 
+  
+// POST /Inventory
   router.post('/', (req, res) => {
-    console.log(req.body)
-    res.send('POST /inventory')
+    
+    if(!req.body.side) {
+      //Default
+      req.body.side = "Unknown"
+    }
+    if(!req.body.description) {
+      //Default
+      req.body.description = "Good"
+    }
+    inventory.push(req.body) // push the data to the route
+    res.redirect('/inventory')
   })
 
 

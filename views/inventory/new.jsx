@@ -16,41 +16,39 @@ function new_form() {
                     <title>Document</title>
                 </head>
                 <body>
-
-                    <form method="POST" action="/inventory">
-
-                        <div>
-                            <label htmlFor="make">Make</label>
-                            <input id="make" name="make" type="text"  />
+                    <form action="/inventory" method="POST">
+                        <div className="mainFormDiv">
+                            <div className="mainDiv">
+                                <div className="formDiv">
+                                    <label htmlFor="make">Make</label>
+                                    <input id="make" name="make" required />
+                                </div>
+                                <div className="formDiv" >
+                                    <label htmlFor="model">Model</label>
+                                    <input id="model" name="model" required />
+                                </div>
+                                <div className="formDiv">
+                                    <label htmlFor="year">Year</label>
+                                    <input id="year" name="year" required />
+                                </div>
+                                <div className="formDiv">
+                                    <label htmlFor="part_name">Part Name</label>
+                                    <input id="part_name" name="part_name" required />
+                                </div>
+                                <div className="formDiv">
+                                    <label htmlFor="side">Which Side</label>
+                                    <input type="text" id="side" name="side" />
+                                </div>
+                                <div className="formDiv">
+                                    <label htmlFor="description">Description</label>
+                                    <input type="text" id="description" name="description" />
+                                </div>
+                                <div>
+                                </div>
+                                <input className="submit" type="submit" value="Add Part" />
+                            </div>
                         </div>
-                        <div>
-                            <label htmlFor="model">Model</label>
-                            <input id="model" name="model" type="text"  />
-                        </div>
-                        <div>
-                            <label htmlFor="year">Year</label>
-                            <input id="year" name="year" type="text"  />
-                        </div>
-                        <div>
-                            <label htmlFor="part_name">Part Name</label>
-                            <input id="part_name" name="part_name" type="text"  />
-                        </div>
-                        <div>
-                            <label htmlFor="side">Which Side</label>
-                            <input id="side" name="side" type="text" />
-                        </div>
-                        <div>
-                            <label htmlFor="description">Description</label>
-                            <input id="description" name="description" type="text" />
-                        </div>
-                        <div>
-                            <input type="submit" value="Add Part"/>
-                        </div>
-                      
-
                     </form>
-
-                   
                 </body>
             </html>
         </Def>

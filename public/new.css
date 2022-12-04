@@ -1,0 +1,62 @@
+.formDiv{
+
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainDiv{
+
+flex-direction: column;
+
+display: flex;
+
+}
+
+
+form{
+
+
+
+}
+
+
+label{
+
+  font-size: 30px;
+
+}
+
+input  {
+
+width: 208px;
+height: 35px;
+font-size: 23px;
+}
+
+select {
+
+  width: 216px;
+  height: 35px;
+  font-size: 23px;
+  
+  }
+
+.submit{
+
+  margin-top: 15px;
+  width: 215px;
+  height: 35px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-left: auto;
+margin-right: auto;
+}
+
+h1{
+
+text-align: center;
+margin-bottom: 35px;
+
+}
