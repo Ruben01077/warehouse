@@ -4,7 +4,7 @@ module.exports =  [{
     year: '2019',
     part_name: 'Headlight',
     side: 'Right',
-    description: 'OK'
+    description: "There is one broken tabs "
   },
   {
     make: 'Toyota',
@@ -12,7 +12,7 @@ module.exports =  [{
     year: '2020',
     part_name: 'Tail Light',
     side: 'Left',
-    description: 'Scratch'
+    description: "There is two broken tabs "
   },
   {
     make: 'Toyota',
@@ -20,7 +20,7 @@ module.exports =  [{
     year: '2020',
     part_name: 'Tail Light',
     side: 'Left',
-    description: 'Scratch'
+    description: "There is scratch on the lense"
   },
   {
     make: 'Toyota',
@@ -28,7 +28,7 @@ module.exports =  [{
     year: '2020',
     part_name: 'Tail Light',
     side: 'Left',
-    description: 'Scratch'
+    description: "There is scratch on the lense"
   },
   {
     make: 'Toyota',
@@ -36,7 +36,7 @@ module.exports =  [{
     year: '2020-2022',
     part_name: 'Tail Light',
     side: 'Left',
-    description: 'Scratch'
+    description: "There is scratch on the lense"
   },
   {
     make: 'Toyota',
@@ -44,5 +44,5 @@ module.exports =  [{
     year: '2020',
     part_name: 'Tail Light',
     side: 'Left',
-    description: 'Scratch'
+    description: "There is scratch on the lense"
   }]

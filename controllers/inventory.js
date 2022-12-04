@@ -31,10 +31,24 @@ router.get('/', (req, res) => {
       req.body.description = "Good"
     }
     inventory.push(req.body) // push the data to the route
-    res.redirect('/inventory')
+    res.redirect("/inventory")
   })
 
-
-
+  router.get('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+      res.render('error404')
+    }
+    else if (!inventory[id]) {
+      res.render('error404')
+    }
+    else {
+      res.render('show', {part:inventory[id]})
+    }
+  })
+  
+  
+  
+  
 
 module.exports = router

@@ -36,12 +36,12 @@ function new_form() {
                                     <input id="part_name" name="part_name" required />
                                 </div>
                                 <div className="formDiv">
-                                    <label htmlFor="side">Which Side</label>
-                                    <input type="text" id="side" name="side" />
+                                    <label htmlFor="side">Position</label>
+                                    <input type="text" id="side" name="side" placeholder="Right or Left?" />
                                 </div>
                                 <div className="formDiv">
                                     <label htmlFor="description">Description</label>
-                                    <input type="text" id="description" name="description" />
+                                    <textarea type="text" id="description" name="description" placeholder="Description here!" />
                                 </div>
                                 <div>
                                 </div>

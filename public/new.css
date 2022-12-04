@@ -15,9 +15,10 @@ display: flex;
 }
 
 
-form{
+textarea{
 
-
+  height: 100px;
+  width: 208px;
 
 }
 

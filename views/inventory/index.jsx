@@ -4,21 +4,22 @@ import Def from "../default"
 
 function index(data) {
 
-    let inventoryFormatted = data.inventory.map((part) => {
+    let inventoryFormatted = data.inventory.map((part, index) => {
 
         return (
             <div className='parts_bar'>
-                            <ul className="">
+                <ul className="">
 
-                                <div>{part.make}</div>
-                                <div>{part.model}</div>
-                                <div>{part.year}</div>
-                                <div>{part.part_name}</div>
-                                <div>{part.side}</div>
-                                <div>{part.description}</div>
+                  <a href={`/inventory/${index}`}><div>{part.make}</div></a> 
+                    <div>{part.model}</div>
+                    <div>{part.year}</div>
+                    <div>{part.part_name}</div>
+                    <div>{part.side}</div>
+                  
 
-                            </ul>
-                         </div>
+                   
+                </ul>
+            </div>
         )
 
     })
@@ -46,10 +47,10 @@ function index(data) {
                                 <div>Year</div>
                                 <div>Parts Name</div>
                                 <div>Side</div>
-                                <div>Description</div>
+                             
 
                             </ul>
-                         </div>
+                        </div>
                         {inventoryFormatted}
                     </div>
 
