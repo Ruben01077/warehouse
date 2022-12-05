@@ -45,9 +45,40 @@ router.get('/', (req, res) => {
       res.render('error404')
     }
     else {
-      res.render('show', {part:inventory[id], id})
+      res.render('inventory/show', {part:inventory[id], id})
     }
   })
+  
+  router.get('/:id/edit', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!inventory[id]) {
+        res.render('error404')
+    }
+    else {
+      res.render('inventory/edit', { part: inventory[id], id })
+     
+    }
+  })
+  
+
+  router.put('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!inventory[id]) {
+        res.render('error404')
+    }
+    else {
+        inventory[id] = req.body
+        res.redirect(`/inventory/${id}`)
+    }
+  })
+  
+  
   
   router.delete('/:id', (req, res) => {
     let id = Number(req.params.id)
@@ -66,5 +97,6 @@ router.get('/', (req, res) => {
   
   
   
+
 
 module.exports = router

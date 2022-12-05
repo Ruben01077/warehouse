@@ -4,6 +4,8 @@ import Def from "../default"
 
 function new_form() {
 
+   
+
     return (
         <Def>
 
@@ -42,13 +44,17 @@ function new_form() {
                                 <div className="formDiv">
                                     <label htmlFor="description">Description</label>
                                     <textarea type="text" id="description" name="description" placeholder="Description here!" />
-                                </div>
+                                </div>                               
                                 <div>
                                 </div>
                                 <input className="submit" type="submit" value="Add Part" />
                             </div>
                         </div>
                     </form>
+
+                  
+         
+      
                 </body>
             </html>
         </Def>

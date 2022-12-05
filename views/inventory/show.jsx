@@ -1,5 +1,5 @@
 import React from 'react'
-import Def from './default'
+import Def from '../default'
 
 
 function show(data) {
@@ -27,17 +27,18 @@ function show(data) {
             <h1> Part Name: {data.part.part_name}</h1>
             <h1>Description: {data.part.description}</h1>
 
-            <div className='editDeleteDiv'>
-                        <a href={`inventory/${data.id}/edit}`} className="btn btn-warning">
-                            Edit
-                        </a>
-                        <form method="POST" action={`/inventory/${data.id}?_method=DELETE`}>
-                            <button type="submit" className="btn btn-danger">
-                                Delete
-                            </button>
-                        </form>
+                          <div className='editDeleteDiv'>
+                              <a href={`/inventory/${data.id}/edit`} className="btn btn-warning">
+                                  Edit
+                              </a>
 
-                    </div>
+                              <form method="POST" action={`/inventory/${data.id}?_method=DELETE`}>
+                                  <button type="submit" className="btn btn-danger">
+                                      Delete
+                                  </button>
+                              </form>
+
+                          </div>
 
         </div>    
     </div>
