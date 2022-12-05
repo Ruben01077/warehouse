@@ -45,7 +45,7 @@ function index(data) {
                                 <div>Make</div>
                                 <div>Model</div>
                                 <div>Year</div>
-                                <div>Parts Name</div>
+                                <div>Part Name</div>
                                 <div>Side</div>
                              
 

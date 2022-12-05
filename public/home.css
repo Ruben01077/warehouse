@@ -1,0 +1,16 @@
+.home_pic{
+    width: 1200px;
+   display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.welcome_message{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 55px;
+    color: #006EAA;
+  
+  
+}
