@@ -87,7 +87,7 @@ function new_form() {
       </div>
 
       <div class="input-container ic2">
-        <textarea id="description" name="description" class="input" type="text" placeholder=" " />
+        <input id="description" name="description" class="input" type="text" placeholder=" " />
         <div class="cut cut-short"></div>
         <label htmlFor="description" class="placeholder">Description</label>
       </div>

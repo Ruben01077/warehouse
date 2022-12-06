@@ -32,7 +32,7 @@ function show(data) {
                                   Edit
                               </a>
 
-                              <form method="POST" action={`/inventory/${data.id}?_method=DELETE`}>
+                              <form method="POST" action={`/inventory/${data.part.id}?_method=DELETE`}>
                                   <button type="submit" className="btn btn-danger">
                                       Delete
                                   </button>
