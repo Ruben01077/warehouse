@@ -46,7 +46,7 @@ function index(data) {
                                 <div>Model</div>
                                 <div>Year</div>
                                 <div>Part Name</div>
-                                <div>Side</div>
+                                <div>Position</div>
                              
 
                             </ul>

@@ -5,20 +5,31 @@
    margin-bottom: 10px;
    background-color: rgb(17, 142, 251);
    color: white;
-
+   border-radius: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+    border: 0.5px solid black;
+    box-shadow: 2px 2px 6px black;
+   
 }
 
 .parts_bar{
 
-   top: 0;
+  
    display: flex;
-   background-color: aliceblue;
+   border: 0.5px solid;
+   background-color: rgb(245, 243, 219);
    margin-bottom: 10px;
+   border-radius: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   box-shadow: 2px 2px 6px;
 
 }
 
 ul{
    display: flex;
+
 
 }
 
@@ -41,4 +52,6 @@ justify-content: center;
 align-items: center;
 } 
 
-
+body{
+   background-color: rgb(248, 248, 239);
+}
