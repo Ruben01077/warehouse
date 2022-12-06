@@ -28,7 +28,7 @@ function show(data) {
             <h1>Description: {data.part.description}</h1>
 
                           <div className='editDeleteDiv'>
-                              <a href={`/inventory/${data.id}/edit`} className="btn btn-warning">
+                              <a href={`/inventory/${data.part.id}/edit`} className="btn btn-warning">
                                   Edit
                               </a>
 

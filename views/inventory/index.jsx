@@ -4,13 +4,13 @@ import Def from "../default"
 
 function index(data) {
 
-    let inventoryFormatted = data.inventory.map((part, index) => {
+    let inventoryFormatted = data.inventory.map((part) => {
 
         return (
             <div className='parts_bar'>
                 <ul className="">
 
-                  <a href={`/inventory/${index}`}><div>{part.make}</div></a> 
+                  <a href={`/inventory/${part.id}`}><div>{part.make}</div></a> 
                     <div>{part.model}</div>
                     <div>{part.year}</div>
                     <div>{part.part_name}</div>

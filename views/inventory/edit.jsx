@@ -14,7 +14,7 @@ function edit(data) {
                     <title>Document</title>
                 </head>
                 <body>
-                    <form class="form" method="POST" action={`/inventory/${data.id}?_method=PUT`}>
+                    <form class="form" method="POST" action={`/inventory/${data.part.id}?_method=PUT`}>
                         <div class="title">Welcome</div>
                         <div class="subtitle">Let's Edit.</div>
 
