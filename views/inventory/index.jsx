@@ -10,7 +10,7 @@ function index(data) {
             <div className='parts_bar'>
                 <ul className="">
 
-                  <a href={`/inventory/${part.id}`}><div>{part.make}</div></a> 
+                <div> <a href={`/inventory/${part.id}`}>{part.make}</a> </div>
                     <div>{part.model}</div>
                     <div>{part.year}</div>
                     <div>{part.part_name}</div>
