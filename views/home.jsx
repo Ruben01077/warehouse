@@ -20,7 +20,7 @@ function home () {
             </head>
             <body>
               <h1 className='welcome_message'>Welcome to the Car Mart Warehouse</h1>
-            <img className='home_pic'  src="warehouse_pic.png" alt="" srcset="" />
+            <img className='home_pic'  src="pictures/warehouse_pic.png" alt="" srcset="" />
               
             </body>
             </html>

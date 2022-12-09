@@ -1,7 +1,7 @@
 const express = require('express')
 const router = require('express').Router()
 const db = require('../models') // Models
-const inventory = require('../models/inventory')
+
 
 
 router.use(express.static('public'))
@@ -51,7 +51,7 @@ router.get('/:id', (req, res) => {
 
 router.put('/:id', (req, res) => {
   db.Part.findByIdAndUpdate(req.params.id, req.body, {new: true})
-  .then((updatePart)=> {
+  .then(()=> {
    res.redirect(`/inventory/${req.params.id}`)
   })
   .catch(err =>{
@@ -63,7 +63,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   db.Part.findByIdAndDelete(req.params.id)
-  .then((deletePart) => {
+  .then(() => {
       res.redirect('/inventory')
   })
   .catch(err => {
