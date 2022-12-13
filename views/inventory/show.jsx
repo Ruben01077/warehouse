@@ -17,7 +17,7 @@ function show(data) {
         <body>
     <div className='mainDiv'>
         <div className='picDiv'>
-            <img src="no_image.jpeg" alt="" srcset="" />
+            <img src="pictures/no_image.jpeg" alt="" srcset="" />
         </div>    
         <div className='infoDiv'>
             <h1>Make: {data.part.make}</h1>

@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Ruben01077.github.io/warehouse",
   "name": "warehouse",
   "version": "1.0.0",
-  "description": "",
+  "description": "Warehouse for auto parts",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh -pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +19,15 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.8.0",
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruben01077/warehouse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ruben01077/warehouse/issues"
   }
 }
