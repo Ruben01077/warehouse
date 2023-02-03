@@ -1,0 +1,138 @@
+body {
+  background-color: rgb(241, 248, 239);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body .navbar, body .navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+  width: 100%;
+}
+body .form {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 25px;
+  width: 340px;
+}
+body .form .title {
+  color: silver;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+body .form .subtitle {
+  color: silver;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 300px;
+}
+body .form .input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+body .form .input-container .input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 15px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+body .form .input-container .cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 85px;
+  height: 25px;
+}
+body .form .input-container .cut-short {
+  width: 200px;
+  height: 25px;
+}
+body .form .input-container .input:not(:-moz-placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+body .form .input-container .input:not(:-ms-input-placeholder) ~ .cut {
+  transform: translateY(8px);
+}
+body .form .input-container .input:focus ~ .cut,
+body .form .input-container .input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+body .form .input-container .placeholder {
+  color: #65657b;
+  font-size: 25px;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 10px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+body .form .input-container .input:not(:-moz-placeholder-shown) ~ .placeholder {
+  transform: translateY(-25px) translateX(10px) scale(0.85);
+}
+body .form .input-container .input:not(:-ms-input-placeholder) ~ .placeholder {
+  transform: translateY(-25px) translateX(10px) scale(0.85);
+}
+body .form .input-container .input:focus ~ .placeholder,
+body .form .input-container .input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-25px) translateX(10px) scale(0.85);
+}
+body .form .input-container .input:not(:-moz-placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+body .form .input-container .input:not(:-ms-input-placeholder) ~ .placeholder {
+  color: #808097;
+}
+body .form .input-container .input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+body .form .input-container .input:focus ~ .placeholder {
+  color: #08d;
+}
+body .form .ic1 {
+  margin-top: 40px;
+}
+body .form .ic2 {
+  margin-top: 30px;
+}
+body .form .submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 23px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  transition: 0.2s;
+}
+body .form .submit:active {
+  background-color: #06b;
+}
+body .form .submit:hover {
+  font-size: 28px;
+}/*# sourceMappingURL=new.css.map */

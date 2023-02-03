@@ -6,9 +6,6 @@ body{
   body {
       margin: 0px;
     }
-
-  
- 
   
   li{
   
@@ -20,8 +17,6 @@ body{
   
   }
   
-  
-
   .navbar-inverse {
    
     text-align: center;
@@ -31,6 +26,5 @@ body{
    
     display: flex;
     border-radius: none;
-
 
 }

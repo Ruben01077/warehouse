@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(241, 248, 239);
+}
+body .mainDiv {
+  height: 100%;
+}
+body .mainDiv .info_bar {
+  top: 0;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  margin-bottom: 10px;
+  background-color: rgb(17, 142, 251);
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0.5px solid black;
+  box-shadow: 2px 2px 6px black;
+}
+body .mainDiv .info_bar ul {
+  display: flex;
+}
+body .mainDiv .info_bar ul div {
+  width: 170px;
+  font-size: 25px;
+  border-right: 1px solid;
+  margin-left: 10px;
+}
+body .mainDiv .parts_bar {
+  display: flex;
+  border: 0.5px solid;
+  background-color: rgb(245, 243, 219);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 6px;
+}
+body .mainDiv .parts_bar ul {
+  display: flex;
+}
+body .mainDiv .parts_bar ul div {
+  width: 170px;
+  font-size: 25px;
+  border-right: 1px solid;
+  margin-left: 10px;
+}/*# sourceMappingURL=inventory.css.map */

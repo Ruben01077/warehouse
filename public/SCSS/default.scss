@@ -1,0 +1,28 @@
+
+body{
+    height: 100%;
+    margin: 0px;
+
+    li{
+    
+        padding: 10px;
+        list-style: none;
+        font-size: 25px;
+        display: inline;
+        
+        
+    }
+
+    .navbar-inverse {
+   
+        text-align: center;
+    }
+
+    .navbar {
+   
+        display: flex;
+        border-radius: none;
+    
+    }
+}
+

@@ -1,0 +1,23 @@
+@import "input";
+
+
+body {
+
+    @include background-color;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    .navbar , .navbar-inverse {
+        background-color: #222;
+        border-color: #080808;
+        width: 100%
+    }
+    
+    @include form(rgb(0, 0, 0), silver);
+
+    
+       
+  }

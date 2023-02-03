@@ -1,0 +1,17 @@
+body {
+  height: 100%;
+  margin: 0px;
+}
+body li {
+  padding: 10px;
+  list-style: none;
+  font-size: 25px;
+  display: inline;
+}
+body .navbar-inverse {
+  text-align: center;
+}
+body .navbar {
+  display: flex;
+  border-radius: none;
+}/*# sourceMappingURL=default.css.map */

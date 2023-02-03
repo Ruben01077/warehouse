@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(241, 248, 239);
+}
+body .mainDiv {
+  display: flex;
+}
+body .mainDiv img {
+  width: 600px;
+  border: 1px solid;
+  margin-right: 15px;
+  margin-left: 15px;
+  box-shadow: 2px 2px 6px;
+  border-radius: 10px;
+}
+body .mainDiv .editDeleteDiv {
+  display: flex;
+}
+body .mainDiv .btn-danger {
+  margin-left: 20px;
+}/*# sourceMappingURL=show.css.map */

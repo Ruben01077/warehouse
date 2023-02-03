@@ -1,0 +1,32 @@
+@import "input";
+
+body{
+
+    @include background-color;
+
+
+    .mainDiv{
+        display: flex;
+
+        img{
+
+            width: 600px;
+            border: 1px solid;
+            margin-right: 15px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 6px;
+            border-radius: 10px;
+        }
+
+        .editDeleteDiv{
+            display: flex;
+        }
+
+        .btn-danger{
+            margin-left: 20px;
+        }
+    
+}
+
+
+}

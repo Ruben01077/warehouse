@@ -1,0 +1,66 @@
+@import "input";
+
+body{
+    @include background-color;
+        
+    .mainDiv{
+        height: 100%;
+
+        .info_bar{
+            top: 0;
+            display: flex;
+            position: sticky;
+            margin-bottom: 10px;
+            background-color: rgb(17, 142, 251);
+            color: white;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border: 0.5px solid black;
+            box-shadow: 2px 2px 6px black;
+
+            ul{
+                display: flex;
+
+                div{
+                    width: 170px;
+                    font-size: 25px;
+                    border-right: 1px solid;
+                    margin-left: 10px;
+                }
+            
+            
+            }
+            
+        }
+
+        .parts_bar{
+
+    
+            display: flex;
+            border: 0.5px solid;
+            background-color: rgb(245, 243, 219);
+            margin-bottom: 10px;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 2px 2px 6px;
+
+            ul{
+                display: flex;
+
+                div{
+                    width: 170px;
+                    font-size: 25px;
+                    border-right: 1px solid;
+                    margin-left: 10px;
+                }
+            
+            
+            }
+        
+        }
+    }
+
+
+}
