@@ -10,14 +10,14 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 
 
-app.get("/", (req, res)=>{
+app.get("/", (_req: any, res: { render: (arg0: string) => void })=>{
 res.render("home")
 })
 
 app.use('/inventory', require('./controllers/inventory'))
 
 
-app.get("*", (req,res)=>{
+app.get("*", (req: any,res: { render: (arg0: string) => void })=>{
 
     res.render("error404")
 
